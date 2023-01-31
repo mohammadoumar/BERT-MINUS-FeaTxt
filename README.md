@@ -12,18 +12,19 @@ Our model incorporates contextual and structural features of the argument compon
 
 # Data
 
-We experiment on our model with 3 datasets: 
+We experiment on our model with the Persuasive Essays (PE) which is a collection of 402 structured and argumentative written essays on various topics. 
 
-1) *Persuasive Essays*: https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2422
+The raw dataset can be accessed at: https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2422
 
-The contextual and structural features of all three datasets have been pre-computed separately. All three datasets in the PyTorch ready ``.pt`` format are given in the ``/datasets`` folder.
+The contextual, structural and syntactic features of all three datasets have been pre-computed separately. All datasets in the PyTorch ready ``.pt`` format are given in the ``/datasets`` folder.
 
 # Tasks
 
-We train our model for two tasks: 
+We train our model for three tasks: 
 
-1) BERT fine-tune on the three datasets
-2) comparing numerical concatenation versus our structural features as text
+1) Link Identification (LI) Task: Argument Type Classification (ACT): given an argument component, classify it as {\it Claim}, {\it Major Claim} or {\it Premise}.
+2) Argument Type Classification (ATC) Task: Link Identification (LI): given an argument component, classify it as either {\it Linked} or {\it Not Linked} to some other argument.
+3) Link Type Classification (LTC) Task: Link Type Classification (LTC): given a linked argument component, classify whether its link is of a {\it Support} or an {\it Attack} type.
 
 More details about BERT fine-tuning can be found here: https://huggingface.co/docs/transformers/training
 
