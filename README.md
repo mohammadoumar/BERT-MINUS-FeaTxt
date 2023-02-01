@@ -22,9 +22,9 @@ The contextual, structural and syntactic features of all three datasets have bee
 
 We train our model for three tasks: 
 
-1) Link Identification (LI) Task: Argument Type Classification (ACT): given an argument component, classify it as {\it Claim}, {\it Major Claim} or {\it Premise}.
-2) Argument Type Classification (ATC) Task: Link Identification (LI): given an argument component, classify it as either {\it Linked} or {\it Not Linked} to some other argument.
-3) Link Type Classification (LTC) Task: Link Type Classification (LTC): given a linked argument component, classify whether its link is of a {\it Support} or an {\it Attack} type.
+1) **Link Identification (LI)** Task: given an argument component, classify it as either *Linked* or *Not Linked* to some other argument.
+2) **Argument Type Classification** (ATC) Task: given an argument component, classify it as *Major Claim*, *Claim*, or *Premise*.
+3) **Link Type Classification** (LTC) Task: Link Type Classification (LTC): given a linked argument component, classify whether its link is of a *Support* or an *Attack* type.
 
 More details about BERT fine-tuning can be found here: https://huggingface.co/docs/transformers/training
 
