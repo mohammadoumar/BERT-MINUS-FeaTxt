@@ -7,7 +7,7 @@
 Our model incorporates contextual and structural features of the argument component to build enriched BERT based representation for argument classification. More details about BERT and other transformer models can be found here: https://github.com/huggingface/transformers
 
 <p align="center">
-<img src="bert--minus--model.pdf" width="400" height="300" />
+<img src="model--bert--minus.png" width="400" height="300" />
 </p>
 
 # Data
