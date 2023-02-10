@@ -28,7 +28,6 @@ We train our model for three tasks:
 2) **Argument Type Classification** (ATC) Task: given an argument component, classify it as *Major Claim*, *Claim*, or *Premise*.
 3) **Link Type Classification** (LTC) Task: Link Type Classification (LTC): given a linked argument component, classify whether its link is of a *Support* or an *Attack* type.
 
-More details about BERT fine-tuning can be found here: https://huggingface.co/docs/transformers/training
 
 # Notebooks
 
