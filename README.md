@@ -4,7 +4,9 @@
 
 # Model
 
-Our model incorporates contextual and structural features of the argument component to build enriched BERT based representation for argument classification. More details about BERT and other transformer models can be found here: https://github.com/huggingface/transformers
+We introduce a modular BERT-based model, called  BERT--MINUS, which consists of four BERT models, a custom Features as Text (FeaTxt) sentence representation, and a Selective Fine-tuning process for transfer learning.
+
+The BERT--MINUS model works as follows: the Joint Module embeds a complete input paragraph which consists of several Argumentative Discourse Units (ADU) to be classified. Taking this paragraph embedding as input, the Span Representation Function computes span-based representations for argument markers, argument components, and additional features -- given as text. Subsequently, the Dedicated Module, composed of three BERT models, contextualizes these span representations separately to better capture the flow between them. These contextualized representations are then concatenated to obtain a combined representation of the ADU which is finally fed to a classification layer.
 
 <p align="center">
 <img src="model--bert--minus.png" width="400" height="300" />
