@@ -18,7 +18,7 @@ We experiment on our model with the Persuasive Essays (PE) which is a collection
 
 The raw dataset can be accessed at: https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2422
 
-The contextual, structural and syntactic features of all three datasets have been pre-computed separately. All datasets in the PyTorch ready ``.pt`` format are given in the ``/datasets`` folder.
+The contextual, structural and syntactic features and the spans for the dataset have been pre-computed separately. All datasets in the PyTorch ready ``.pt`` format are given in the ``/datasets`` folder.
 
 # Tasks
 
